@@ -1,0 +1,153 @@
+:root {
+    --spacer: 1rem;
+
+    --spacer_double: calc(var(--spacer) * 2);
+
+    --spacer_half: calc(var(--spacer) * 0.5);
+    --spacer_quarter: calc(var(--spacer) * 0.25);
+}
+
+@font-face {
+    font-family: WyliFont;
+    src: url(fonts/WyliFont-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    height: var(--spacer);
+}
+::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: var(--spacer);
+    margin: var(--spacer);
+    box-shadow: inset 0 var(--spacer_quarter) var(--spacer_quarter) 0 rgb(0, 0, 0, 0.33);
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: var(--spacer);
+    border: var(--spacer_quarter) solid gray;
+}
+
+
+
+h1,
+h2 {
+    font-family: WyliFont;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h1 {
+    font-size: 2rem;
+}
+
+
+
+header .hero {
+    background-image: url(images/logo-text.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+
+body {
+    background-image: url(images/bg-main.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+
+main {
+    display: flex;
+    place-items: center;
+    gap: var(--spacer);
+}
+
+main .left {    
+    width: 33%;
+}
+
+main .right {
+    width: 33%;
+}
+
+main .middle {
+    width: 67%;
+
+    display: grid;
+    place-content: center;
+}
+
+main .left img {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 25%);
+    max-width: 33%;
+    z-index: -1;
+}
+main .right img {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    max-width: 33%;
+    z-index: -1;
+}
+
+main h1 {
+    margin: var(--spacer_double);
+    text-align: center;
+}
+main h2 {
+    margin: 0;
+}
+
+.carousel-h {
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+
+    padding: 0 var(--spacer) var(--spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.carousel-h .item {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer_half);
+    padding: var(--spacer_half);
+    background-color: white;
+    border-radius: var(--spacer_half);
+    box-shadow: 0 var(--spacer_half) var(--spacer_half) 0 rgb(0, 0, 0, 0.33);
+}
+.carousel-h .item:hover {
+    box-shadow: inset 0 var(--spacer_half) var(--spacer_half) 0 rgb(0, 0, 0, 0.33);
+}
+
+.carousel-h .item .thumbnail {
+    background-color: gray;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--spacer_quarter);
+}
+
+
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
