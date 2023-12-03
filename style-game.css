@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --spacer: 1rem;
+
+    --spacer_double: calc(var(--spacer) * 2);
+
+    --spacer_half: calc(var(--spacer) * 0.5);
+    --spacer_quarter: calc(var(--spacer) * 0.25);
+}
+@font-face {
+    font-family: WyliFont;
+    src: url(fonts/WyliFont-Regular.ttf);
+}
+
+
+
+h1,
+h2 {
+    font-family: WyliFont;
+}
+h1 {
+    font-size: 4rem;
+}
+h1 {
+    font-size: 2rem;
+}
+
+
+
+p {
+    font-family: WyliFont;
+    font-size: 2rem;
+    text-align: center;
+    padding: var(--spacer_half);
+}
+
+
+
+header nav {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding: var(--spacer) var(--spacer);
+}
+header .links a, button {
+    font-family: WyliFont;
+    font-size: 2rem;
+    text-decoration: none;
+}
+header .logo-text {
+    margin-top: var(--spacer);
+    height: 6rem;
+    flex: 1;
+}
+header .logo-text img {
+    height: 100%;
+}
+header .logo-text img:hover {
+    content: url(images/logos/main-text-hover.png);
+    cursor: pointer;
+}
+header .links {
+    list-style: none;
+}
+header .links li {
+    display: inline-block;
+    padding: 0 var(--spacer);
+}
+header .links li a {
+    transform: all 0.5s ease 0s;
+    color: white;
+}
+header .links li a:hover {
+    color: lightgray;
+}
+header .play button {
+    padding: var(--spacer_half) var(--spacer);
+    background-color: white;
+    color: black;
+    border-radius: var(--spacer_double);
+    border: var(--spacer_quarter) solid white;
+    cursor: pointer;
+    transform: all 0.5s ease 0s;
+    margin-left: var(--spacer);
+}
+header .play button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+
+
+body {
+    background-image: url(images/backgrounds/fruityFauna.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+
+main .top {
+    display: grid;
+    place-items: center;
+}
+main .top .logo-text {
+    width: 67%;
+    max-height: 16rem;
+    display: grid;
+    place-items: center;
+}
+main .top .logo-text img {
+    max-width: 100%;
+    max-height: 16rem;
+}
+
+main .middle {
+    display: grid;
+    place-items: center;
+}
+main .middle > * {
+    width: 67%;
+}
+
+main .left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    max-width: 25%; 
+}
+main .right {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -25%);
+    max-width: 25%;
+}
+
+main h1 {
+    margin: var(--spacer_double);
+    text-align: center;
+}
+main h2 {
+    margin: 0;
+}
+
+.carousel-h {
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+
+    padding: 0 var(--spacer) var(--spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.carousel-h::-webkit-scrollbar {
+    height: var(--spacer);
+}
+.carousel-h::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: var(--spacer);
+    margin: var(--spacer);
+    box-shadow: inset 0 var(--spacer_quarter) var(--spacer_quarter) 0 rgb(0, 0, 0, 0.33);
+}
+.carousel-h::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: var(--spacer);
+    border: var(--spacer_quarter) solid gray;
+}
+.carousel-h::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
+}
+
+.carousel-h .item {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer_half);
+    padding: var(--spacer_half);
+    background-color: white;
+    border-radius: var(--spacer_half);
+    box-shadow: 0 var(--spacer_half) var(--spacer_half) 0 rgb(0, 0, 0, 0.33);
+}
+.carousel-h .item:hover {
+    box-shadow: inset 0 var(--spacer_half) var(--spacer_half) 0 rgb(0, 0, 0, 0.33);
+    cursor: pointer;
+}
+.carousel-h .item .thumbnail {
+    background-color: gray;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--spacer_quarter);
+}
+
+
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer);
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+}

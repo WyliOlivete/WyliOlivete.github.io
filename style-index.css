@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --spacer: 1rem;
 
@@ -9,6 +14,25 @@
 @font-face {
     font-family: WyliFont;
     src: url(fonts/WyliFont-Regular.ttf);
+}
+
+
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    text-decoration: none;
+    color: black;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -26,14 +50,6 @@ h1 {
 
 
 
-/* header .hero {
-    background-image: url(images/logo-text.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-} */
 header {
     display: grid;
     place-items: center;
@@ -41,17 +57,14 @@ header {
 header .logo-text {
     max-height: 16rem;
 }
-header .logo-text:hover {
-    content: url(images/logo-text-hover.png);
-    cursor: pointer;
-}
 
 
 
 body {
-    background-image: url(images/bg-main.png);
+    background-image: url(images/backgrounds/main.png);
     background-size: cover;
     background-position: 50% 50%;
+    padding-bottom: var(--spacer);
 }
 
 
@@ -69,14 +82,14 @@ main .left {
     left: 0;
     bottom: 0;
     transform: translate(-50%, 50%);
-    max-width: 33%; 
+    max-width: 25%; 
 }
 main .right {
     position: fixed;
     right: 0;
     top: 50%;
-    transform: translate(50%, -50%);
-    max-width: 33%;
+    transform: translate(50%, -25%);
+    max-width: 25%;
 }
 
 main h1 {
