@@ -114,32 +114,33 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 }
-
-
-
-main .left {
+body .left {
     position: fixed;
     bottom: -33%;
     width: 16%;
     height: auto;
+    z-index: -1;
 }
-main .right {
+body .right {
     position: fixed;
     bottom: 0;
     right: 0;
     width: 16%;
     height: auto;
+    z-index: -1;
 }
-main .left img {
+body .left img {
     position: relative;
     float: right;
     transform: translateX(-16%);
 }
-main .right img {
+body .right img {
     position: relative;
     float: left;
     transform: translateX(16%);
 }
+
+
 
 main .top {
     display: grid;
