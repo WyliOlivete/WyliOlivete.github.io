@@ -6,6 +6,7 @@
 :root {
     --spacer_rem: 1rem;
 
+    --spacer_rem_eight: calc(var(--spacer_rem) * 8);
     --spacer_rem_double: calc(var(--spacer_rem) * 2);
 
     --spacer_rem_half: calc(var(--spacer_rem) * 0.5);
@@ -56,10 +57,12 @@ p {
 
 
 header nav {
-    height: 8rem;
+    height: var(--spacer_vw);
     display: flex;
     align-items: center;
-    padding: var(--spacer_rem) var(--spacer_rem);
+    padding: var(--spacer_rem);
+    /* padding: var(--spacer_rem) var(--spacer_rem) var(--spacer_rem) var(--spacer_rem_half); */
+    margin-top: var(--spacer_rem_half);
 }
 header .links a, button {
     font-family: WyliFont, "Comic Sans MS", "Comic Sans", cursive;
@@ -67,8 +70,8 @@ header .links a, button {
     text-decoration: none;
 }
 header .logo-text {
-    margin-top: var(--spacer_rem);
-    height: 6rem;
+    /* margin-top: var(--spacer_rem); */
+    height: var(--spacer_vw);
     flex: 1;
 }
 header .logo-text img {
@@ -113,6 +116,7 @@ body {
     background-image: url(images/backgrounds/fruityFauna.png);
     background-size: cover;
     background-position: 50% 50%;
+    padding-bottom: var(--spacer_rem);
 }
 body .left {
     position: fixed;
@@ -164,7 +168,6 @@ main .middle {
 }
 main .middle > * {
     width: 67%;
-    margin: var(--spacer_rem_double);
 }
 
 main .middle .play {
@@ -175,10 +178,16 @@ main .middle .play {
 main .middle .play .trailer {
     width: 100%;
     aspect-ratio: 16 / 9;
+    
+    padding: var(--spacer_rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--spacer_rem_double);
+
 }
 main .middle .play .trailer iframe {
     width: 100%;
     height: 100%;
+    border-radius: var(--spacer_rem);
 }
 
 main .middle .play .actions {
@@ -206,10 +215,14 @@ main .middle .play .actions button:hover {
 }
 
 main .middle .data {
+    margin-top: var(--spacer_rem_eight);
     padding: var(--spacer_rem);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: var(--spacer_rem_double);
+}
+main .middle .data p {
+    color: lightgray;
 }
 
 main h1 {

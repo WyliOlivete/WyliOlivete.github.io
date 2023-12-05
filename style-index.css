@@ -60,11 +60,14 @@ h1 {
 
 
 header {
+    height: var(--spacer_vw);
     display: grid;
     place-items: center;
 }
 header .logo-text {
-    max-height: 16vw;
+    /* margin-top: var(--spacer_rem); */
+    margin-top: var(--spacer_rem_half);
+    height: var(--spacer_vw);
 }
 
 
