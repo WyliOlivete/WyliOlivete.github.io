@@ -74,8 +74,10 @@ header .logo-text {
 
 body {
     background-image: url(images/backgrounds/main.png);
-    background-size: cover;
-    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-position: 50% 50%; */
     padding-bottom: var(--spacer_rem);
 }
 body .left {
@@ -111,8 +113,8 @@ main .middle {
     place-items: center;
 }
 main .middle > * {
-    width: 67%;
-    margin: var(--spacer_rem_double);
+    width: min(900px, 100% - var(--spacer_rem_double));
+    margin: var(--spacer_rem);
 }
 
 main h1 {
