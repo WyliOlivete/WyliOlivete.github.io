@@ -113,14 +113,15 @@ header .play button:hover {
 
 
 
-body {
+body.fruityFauna {
     background-image: url(images/backgrounds/fruityFauna.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    /* background-size: cover;
-    background-position: 50% 50%; */
     padding-bottom: var(--spacer_rem);
+}
+body.hoodlumHeist {
+    background-color: black;
 }
 body .left {
     position: fixed;
