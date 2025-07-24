@@ -155,13 +155,13 @@ main .top {
 }
 main .top .logo-text {
     width: 67%;
-    max-height: 16vw;
+    max-height: 32vw;
     display: grid;
     place-items: center;
 }
 main .top .logo-text img {
     max-width: 100%;
-    max-height: 16vw;
+    max-height: 32vw;
 }
 
 main .middle {
