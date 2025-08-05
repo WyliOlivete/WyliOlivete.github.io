@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Wyli</title>
+  <based-in>PH</based-in>
+  <founding-date>2024</founding-date>
+  <website>https://wyliolivete.github.io</website>
+  <press-contact>
+    <!-- Mail address -->
+    official.wyliolivete@gmail.com
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+
+  <phone>N/A</phone>
+    <address>
+    <line>
+      <!-- Street -->
+    </line>
+    <line>
+      <!-- City -->
+    </line>
+    <line>
+      <!-- Country -->
+      PH
+    </line>
+  </address>
+
+  <socials>
+    <social>
+      <name>Instagram</name>
+      <link>
+        https://instagram.com/official.wyliolivete
+      </link>
+    </social>
+  </socials>
+
+  <description>
+  Hi there! I'm Wyli — a passionate game developer with over 12 years of experience creating games.
+  
+  Gaming has been a part of my life for as long as I can remember. With a wide palette ranging from casual mobile idle games to hardcore soulslike RPGs to tactical strategy card games, I've always been drawn to the unique way games can evoke emotions and spark imagination. That lifelong love of gaming naturally evolved into a desire to build my own — games that capture the same excitement, curiosity, and joy I've experienced as a player.
+
+  As a developer, I handle every part of the process — from code to art, design to sound — which means every game I release is a personal labor of love. My mission is simple: to craft fun, engaging experiences that resonate with players and remind them why we fall in love with games in the first place.
+
+  I can't wait to share my work with you!
+  </description>
+
+  <!-- Choose between a single block: -->
+  <history>I was born in 1999. I have a Bachelor's degree in Computer Science, graduating magna cum laude. I compose music from time to time. I like pixel art and generally minimalistic aesthetics. Uhm... I don't really know what else to say. I guess I'll just add more as I go.</history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+  <trailers>
+    <trailer>
+      <name>Fruity Fauna</name>
+      <!-- Pick one: -->
+      <youtube>
+        <!-- Video ID only, not the full URL -->
+        MbtjXZ49QoQ
+      </youtube>
+      <!-- <vimeo>
+        <!-/- Video ID only, not the full URL -/->
+      </vimeo> -->
+    </trailer>
+  </trailers>
+
+  <!-- <awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link></link>
+    </quote>
+  </quotes>
+
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals> -->
+
+  <credits>
+    <credit>
+      <person>Wyli Olivete</person>
+      <role>Developer</role>
+
+      <!-- Optional: -->
+      <website>https://wyliolivete.github.io</website>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>General</name>
+      <!-- Pick one: -->
+      <mail>official.wyliolivete@gmail.com</mail>
+      <!-- <link></link> -->
+    </contact>
+    
+    <contact>      
+      <name>Technical Assistance</name>
+      <mail>service.wyliolivete@gmail.com</mail>
+    </contact>
+  </contacts>
+</company>

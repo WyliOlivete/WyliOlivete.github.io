@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+  <title>Fruity Fauna</title>
+  <release-dates>
+    <release-date>31 May, 2024</release-date>
+  </release-dates>
+  <website>https://wyliolivete.github.io/game-fruityFauna</website>
+
+  <!-- Link to request press copy: -->
+  <press-copy-request></press-copy-request>
+
+  <platforms>
+    <platform>
+      <name>App Store</name>
+      <link>https://apps.apple.com/us/app/fruity-fauna-match-learn/id6476689945</link>
+    </platform>
+    <platform>
+      <name>Play Store</name>
+      <link>https://play.google.com/store/apps/details?id=com.Wyli.FruityFauna</link>
+    </platform>
+  </platforms>
+
+  <prices>
+    <price>
+      <currency></currency>
+      <value>Free</value>
+    </price>
+  </prices>
+
+  <description>
+  Fruity Fauna is a cozy and refreshing take on the match-3 puzzle genre that combines satisfying gameplay with education, creativity, and charm. Players tap on groups of matching fruits to merge them into blooming flowers, then tap those flowers to spread new fruits across the board — creating chain reactions and strategic combos to feed their adorable animal companions. Each completed level unlocks a quirky, science-based fact narrated by the animals themselves, slowly building a lovable bestiary filled with personality and fun. Along the way, players earn gold to decorate their backgrounds with mix-and-match items and unlock new scenes that reflect their personal style. With optional social features like gifting and visiting friends' designs, fully offline play, and zero forced ads, Fruity Fauna is designed for relaxed, thoughtful play. Its simple mechanics hide surprising depth, while its art style and storytelling offer a meaningful alternative for fans of Royal Match, Gardenscapes and Candy Crush.
+  </description>
+
+  <!-- Choose between a single block: -->
+  <history>I started making Fruity Fauna in 2021. It used to have pixel art graphics and completely different mechanics. In fact, the game has gone through several changes of its core mechanics because I've been struggling to find the perfect balance of skill-based gameplay and a more casual experience.</history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+  <features>
+    <feature>Simple to start, but deeply strategic</feature>
+    <feature>Unique tap-to-merge, tap-to-spread mechanics</feature>
+    <feature>Fun, science-based animal facts told by the animals themselves</feature>
+    <feature>Relaxing visuals, juicy animations, and sweet sound design</feature>
+    <feature>Play anywhere, anytime — no forced ads, no pressure</feature>
+    <feature>Add friends, send gifts, and peek at their progress and decorations</feature>
+    <feature>No internet? No problem — Fruity Fauna is fully offline-playable</feature>
+    <feature>Optional ads only — watch if you want valuable rewards!</feature>
+  </features>
+
+  <trailers>
+    <trailer>
+      <name>Fruity Fauna</name>
+      <!-- Pick one: -->
+      <youtube>
+        <!-- Video ID only, not the full URL -->
+        MbtjXZ49QoQ
+      </youtube>
+      <!-- <vimeo> -->
+        <!-- Video ID only, not the full URL -->
+      <!-- </vimeo> -->
+    </trailer>
+  </trailers>
+
+  <!-- You can set your widgets here (optional): -->
+  <widgets>
+    <appstore>6476689945</appstore>
+    <playstore>com.Wyli.FruityFauna</playstore>
+  </widgets>
+
+  <!-- <awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link></link>
+    </quote>
+  </quotes>
+
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals> -->
+
+  <credits>
+    <credit>
+      <person>Wyli Olivete</person>
+      <role>Developer</role>
+
+      <!-- Optional: -->
+      <website>https://wyliolivete.github.io</website>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>General</name>
+      <!-- Pick one: -->
+      <mail>official.wyliolivete@gmail.com</mail>
+      <!-- <link></link> -->
+    </contact>
+    
+    <contact>      
+      <name>Technical Assistance</name>
+      <mail>service.wyliolivete@gmail.com</mail>
+    </contact>
+  </contacts>
+</product>
